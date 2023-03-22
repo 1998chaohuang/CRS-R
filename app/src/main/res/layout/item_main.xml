@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="姓名"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:hint="请输入姓名"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:paddingRight="17dp"
+            android:text="0"
+            android:textColor="#046599"
+            android:textSize="25sp"
+            android:textStyle="bold|italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="发病"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_happen_day"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingLeft="8dp"
+            android:gravity="center_vertical"
+            android:hint="发病日期:"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="入院"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_hospital_day"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:hint="入院日期"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="诊断"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/et_result"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:hint="请输入诊断结果"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="病因"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/et_reason"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:hint="请输入病因"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

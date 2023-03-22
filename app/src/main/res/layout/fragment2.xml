@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="房号"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_room"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:hint="请输入房号"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="15sp" />
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="总分"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_total_score"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:hint="---"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="病历"
+            android:textColor="#000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:hint="请输入病历号"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:textColor="#000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="发病"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_happen_day"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:paddingLeft="8dp"
+                android:gravity="center_vertical"
+                android:hint="发病日期:"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="入院"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_hospital_day"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:hint="入院日期"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="诊断"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/et_result"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="请输入诊断结果"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="病因"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/et_reason"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:hint="请输入病因"
+                android:paddingLeft="8dp"
+                android:singleLine="true"
+                android:textColor="#000"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="#eee"/>
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#ffffff"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#fff"
+            android:queryHint="请输入登记日期"/>
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="分数"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:layout_centerVertical="true"/>
+
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_noitem"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableTop="@drawable/ic_sorry"
+        android:textSize="15sp"
+        android:textColor="#333"
+        android:drawablePadding="15dp"
+        android:gravity="center"
+        android:text="暂时没有数据" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/main_srl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <TextView
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="去登记"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+
+</LinearLayout>

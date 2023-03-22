@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/content"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:layout_height="50dp">
+    <TextView
+        android:layout_width="70dp"
+        android:text="姓名"
+        android:layout_height="match_parent"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:gravity="center"/>
+    <TextView
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:singleLine="true"
+        android:hint="请输入姓名"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:gravity="center_vertical"/>
+
+
+</LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="+表示脱离MCS；*表示MCS"
+        android:textColor="#000"
+        android:textSize="15sp" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10px"
+                android:background="#eee" />
+
+
+            <TextView
+                android:id="@+id/btn_listener"
+                android:drawablePadding="6dp"
+
+                android:layout_width="match_parent"
+                android:drawableRight="@android:drawable/ic_menu_help"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="听觉功能量表"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_listener"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/listener_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="无 0分"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/listener_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="听觉惊吓反应 1分"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/listener_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="声源定位 2分"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/listener_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="可重复执行命令* 3分"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/listener_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="对指令有稳定反应* 4分"
+                    android:textSize="13sp" />
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/btn_vision"
+                android:drawableRight="@android:drawable/ic_menu_help"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="视觉功能量表"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_vision"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/vision_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="无 0分"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/vision_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="视觉惊吓反应 1分"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/vision_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="视觉对象定位* 2分"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/vision_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="眼球跟踪* 3分"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/vision_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="物体定位：够向物体* 5分"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/vision_05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="识别物体"
+                    android:textSize="13sp" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/btn_sport"
+                android:drawableRight="@android:drawable/ic_menu_help"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="运动功能量表"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_sport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/sport_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="无/松弛 0分"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/sport_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="异常姿势 1分"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/sport_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="回撤屈曲 2分"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/sport_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="对伤害性刺激定位* 3分"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/sport_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="能摆弄物件* 4分"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/sport_05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="自主性运动反应+ 5分"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/sport_06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="会使用物件 6分"
+                    android:textSize="13sp" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/btn_say"
+                android:drawableRight="@android:drawable/ic_menu_help"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="口部运动/言语功能量表"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_say"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/say_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="无 0分"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/say_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="反射性口部运动 1分"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/say_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="发声/口部运动 2分"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/say_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="言语表达可理解* 3分"
+                    android:textSize="13sp" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/btn_communication"
+                android:drawableRight="@android:drawable/ic_menu_help"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="交流评分量表"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_communication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/communication_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="无 0分"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/communication_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="交流不完全准确* 1分"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/communication_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="交流完全准确+ 2分"
+                    android:textSize="13sp" />
+
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#eee" />
+
+            <TextView
+                android:id="@+id/btn_awake"
+                android:drawableRight="@android:drawable/ic_menu_help"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:text="觉醒水平评分量表"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radio_awake"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/awake_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="无"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/awake_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="能刺激下睁眼 1分"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/awake_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="无刺激下睁眼 2分"
+                    android:textSize="13sp" />
+
+                <RadioButton
+                    android:id="@+id/awake_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingLeft="8dp"
+                    android:text="能注意 3分"
+                    android:textSize="13sp" />
+
+            </RadioGroup>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#eee"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/tv_score"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="0"
+            android:textColor="#FF0000"
+            android:textSize="21sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center|right"
+            android:paddingLeft="8dp"
+            android:paddingRight="16dp"
+            android:text="日期"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+    </RelativeLayout>
+</LinearLayout>

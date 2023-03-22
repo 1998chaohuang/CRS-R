@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+    tools:context=".zhujiemianActivity">
+
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="JFK昏迷量表"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/btn_style_two"
+        android:layout_marginTop="40dp" />
+<!--    <Button-->
+<!--        android:id="@+id/bt2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="脑干反射表"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textColor="#ffffff"-->
+<!--        android:layout_marginLeft="60dp"-->
+<!--        android:layout_marginRight="60dp"-->
+<!--        android:background="@drawable/btn_style_one"-->
+<!--        android:layout_marginTop="40dp" />-->
+
+    <Button
+        android:id="@+id/bt4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="各个表方案"
+        android:textSize="20sp"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:background="@drawable/btn_style_two"
+        android:layout_marginTop="40dp" />
+
+
+        <Button
+            android:id="@+id/bt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="导出数据"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/btn_style_one"
+            android:layout_marginTop="40dp" />
+
+</LinearLayout>
